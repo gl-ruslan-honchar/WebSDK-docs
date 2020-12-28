@@ -1,0 +1,39 @@
+name: Docs GitHub Pages deployment CI/CD
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Use Node.js 12.x
+      uses: actions/setup-node@v1
+      with:
+        node-version: 12.x
+
+    - name: Installing dependencies
+      run: npm ci
+
+    - name: Build docs
+      run: npm run docs:build
+
+    - name: Commit & Deploy to GitHub Pages
+      run: |
+        cd docs/.vuepress/dist
+
+        git config --global user.email "ruslan.honchar@globallogic.com"
+        git config --global user.name "GitHub Action by - Ruslan Honchar"
+
+        git init
+        git add -A
+        git commit -m 'deploy'
+        git push -f https://gl-ruslan-honchar:'${{ secrets.GITHUB_TOKEN }}'@github.com/gl-ruslan-honchar/WebSDK-docs.git master:gh-pages
+
+        cd -
