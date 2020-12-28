@@ -1,6 +1,7 @@
 const { description } = require('../../package')
 
 module.exports = {
+  base: '/WebSDK-docs/',
   title: 'WebSDK Docs',
   description: description,
 
