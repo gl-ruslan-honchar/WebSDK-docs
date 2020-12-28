@@ -1,0 +1,19 @@
+{
+  "name": "websdk-docs",
+  "version": "0.0.1",
+  "description": "Documentation for WebSDK",
+  "main": "index.js",
+  "authors": {
+    "name": "Ruslan Honchar",
+    "email": "ruslan.honchar@globallogic.com"
+  },
+  "repository": "/websdk-docs",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
