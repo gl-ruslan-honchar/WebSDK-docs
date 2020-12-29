@@ -51,10 +51,11 @@ module.exports = {
         {
           title: 'API',
           collapsable: false,
+          sidebarDepth: 2,
           children: [
             '',
-            'player',
-            'plugins',
+            'player/',
+            'plugins/',
           ]
         }
       ],
