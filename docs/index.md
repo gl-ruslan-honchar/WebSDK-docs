@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: https://cdn.onlinewebfonts.com/svg/img_331152.png
+heroImage: /sdk.png
 tagline: Documentation for WebSDK
 actionText: Quick Start →
 actionLink: /guide/

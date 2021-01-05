@@ -6,6 +6,7 @@ module.exports = {
   description: description,
 
   head: [
+    ['link', { rel: 'icon', href: '/sdk-icon-2.png' }],
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
@@ -44,6 +45,7 @@ module.exports = {
           children: [
             '',
             'quick-start',
+            'base-setup',
           ]
         }
       ],
@@ -53,9 +55,8 @@ module.exports = {
           collapsable: false,
           sidebarDepth: 2,
           children: [
-            '',
-            'player/',
-            'plugins/',
+            'player',
+            'plugins',
           ]
         }
       ],
