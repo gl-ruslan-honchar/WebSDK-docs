@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Base setup | Pixellot WebSDK Docs</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="icon" href="/WebSDK-docs/sdk-icon-2.png">
+    <meta name="description" content="Documentation for WebSDK">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/WebSDK-docs/assets/css/0.styles.c8f2fae5.css" as="style"><link rel="preload" href="/WebSDK-docs/assets/js/app.f417dda8.js" as="script"><link rel="preload" href="/WebSDK-docs/assets/js/2.de57844f.js" as="script"><link rel="preload" href="/WebSDK-docs/assets/js/12.9a4b1099.js" as="script"><link rel="prefetch" href="/WebSDK-docs/assets/js/10.820b0eb4.js"><link rel="prefetch" href="/WebSDK-docs/assets/js/11.07d7c032.js"><link rel="prefetch" href="/WebSDK-docs/assets/js/13.fcc74124.js"><link rel="prefetch" href="/WebSDK-docs/assets/js/14.d80813fe.js"><link rel="prefetch" href="/WebSDK-docs/assets/js/3.d8803bc9.js"><link rel="prefetch" href="/WebSDK-docs/assets/js/4.6604a497.js"><link rel="prefetch" href="/WebSDK-docs/assets/js/5.8e43deda.js"><link rel="prefetch" href="/WebSDK-docs/assets/js/6.f5ca0e57.js"><link rel="prefetch" href="/WebSDK-docs/assets/js/7.9121d6ac.js"><link rel="prefetch" href="/WebSDK-docs/assets/js/8.3e36c24b.js"><link rel="prefetch" href="/WebSDK-docs/assets/js/9.2f7dacf1.js">
+    <link rel="stylesheet" href="/WebSDK-docs/assets/css/0.styles.c8f2fae5.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/WebSDK-docs/" class="home-link router-link-active"><!----> <span class="site-name">Pixellot WebSDK Docs</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/WebSDK-docs/guide/" class="nav-link router-link-active">
+  Documentation
+</a></div><div class="nav-item"><a href="https://pixellot-web-sdk-dev-sample.pixellot.tv/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Demo
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/Pixellot/web-sdk" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/WebSDK-docs/guide/" class="nav-link router-link-active">
+  Documentation
+</a></div><div class="nav-item"><a href="https://pixellot-web-sdk-dev-sample.pixellot.tv/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Demo
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/Pixellot/web-sdk" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Guide</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/WebSDK-docs/guide/" aria-current="page" class="sidebar-link">Introduction</a></li><li><a href="/WebSDK-docs/guide/base-setup.html" aria-current="page" class="active sidebar-link">Base setup</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>API</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/WebSDK-docs/guide/api.html" class="sidebar-link">WebSDK Player API</a></li><li><a href="/WebSDK-docs/guide/plugins.html" class="sidebar-link">WebSDK Plugins</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="base-setup"><a href="#base-setup" class="header-anchor">#</a> Base setup</h1> <p>Here is our quick start with the WebSDK.</p> <ul><li>HTML</li></ul> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>player<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>https://pixellot-web-sdk.pixellot.tv/v-{version}/pixellot-web-sdk.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>text/javascript<span class="token punctuation">&quot;</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>//imasdk.googleapis.com/js/sdkloader/ima3.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><ul><li>Player initialization.</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> container <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'player'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> player <span class="token operator">=</span> window<span class="token punctuation">[</span><span class="token string">'pixellot-web-sdk'</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">Player</span><span class="token punctuation">(</span>container<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li>Setting video source</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>player<span class="token punctuation">.</span><span class="token function">setSource</span><span class="token punctuation">(</span><span class="token string">'/public/video-sample.mp4'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+player<span class="token punctuation">.</span><span class="token function">play</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li>Plugins installation</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> <span class="token punctuation">{</span> TimeMovePlugin<span class="token punctuation">,</span> ClipCreatePlugin <span class="token punctuation">}</span> <span class="token operator">=</span> window<span class="token punctuation">[</span><span class="token string">'pixellot-web-sdk'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>Plugins<span class="token punctuation">;</span>
+<span class="token keyword">const</span> plugins <span class="token operator">=</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+        name<span class="token operator">:</span> <span class="token string">'timeMovePlugin'</span><span class="token punctuation">,</span>
+        plugin<span class="token operator">:</span> TimeMovePlugin<span class="token punctuation">,</span>
+        options<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+        name<span class="token operator">:</span> <span class="token string">'clipCreatePlugin'</span><span class="token punctuation">,</span>
+        plugin<span class="token operator">:</span> ClipCreatePlugin<span class="token punctuation">,</span>
+        options<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+
+player<span class="token punctuation">.</span>pluginManager<span class="token punctuation">.</span><span class="token function">registerPlugins</span><span class="token punctuation">(</span>plugins<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li>Plugins usage</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>player<span class="token punctuation">.</span><span class="token function">setSource</span><span class="token punctuation">(</span><span class="token string">'/public/video-sample.mp4'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+player<span class="token punctuation">.</span><span class="token function">play</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+player<span class="token punctuation">.</span>clipCreatePlugin<span class="token punctuation">.</span><span class="token function">startRecording</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    player<span class="token punctuation">.</span>clipCreatePlugin<span class="token punctuation">.</span><span class="token function">stopRecording</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">5000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// New clip is created after 5 sec.</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/WebSDK-docs/guide/" class="prev router-link-active">
+        Introduction
+      </a></span> <span class="next"><a href="/WebSDK-docs/guide/api.html">
+        WebSDK Player API
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/WebSDK-docs/assets/js/app.f417dda8.js" defer></script><script src="/WebSDK-docs/assets/js/2.de57844f.js" defer></script><script src="/WebSDK-docs/assets/js/12.9a4b1099.js" defer></script>
+  </body>
+</html>
