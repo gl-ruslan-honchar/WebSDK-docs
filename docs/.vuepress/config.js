@@ -25,12 +25,8 @@ module.exports = {
     lastUpdated: false,
     nav: [
       {
-        text: 'Guide',
+        text: 'Documentation',
         link: '/guide/',
-      },
-      {
-        text: 'API',
-        link: '/api/'
       },
       {
         text: 'Demo',
@@ -43,19 +39,16 @@ module.exports = {
           title: 'Guide',
           collapsable: false,
           children: [
-            '',
-            'quick-start',
-            'base-setup',
+            ['', 'Introduction'],
+            ['base-setup', 'Base setup'],
           ]
-        }
-      ],
-      '/api/': [
+        },
         {
           title: 'API',
           collapsable: false,
           sidebarDepth: 2,
           children: [
-            ['', 'WebSDK Player API'],
+            ['api', 'WebSDK Player API'],
             ['plugins', 'WebSDK Plugins'],
           ]
         }
