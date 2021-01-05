@@ -2,7 +2,7 @@ const { description } = require('../../package')
 
 module.exports = {
   base: '/WebSDK-docs/',
-  title: 'WebSDK Docs',
+  title: 'Pixellot WebSDK Docs',
   description: description,
 
   head: [
@@ -55,8 +55,8 @@ module.exports = {
           collapsable: false,
           sidebarDepth: 2,
           children: [
-            'player',
-            'plugins',
+            ['', 'WebSDK Player API'],
+            ['plugins', 'WebSDK Plugins'],
           ]
         }
       ],
